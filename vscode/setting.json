@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "files.autoGuessEncoding": true,
+    "todo-tree.regex.regex": "((//|#|%|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])"
+}
