@@ -4,7 +4,8 @@ Dotfiles for Mac
 thanks https://github.com/zzzmisa/dotfiles-mac/
 
 ## 実行されること
-* homebrewを用いてパッケージのインストール
+* homebrewを用いたパッケージのインストール
+* asdfを用いたCLIツールのインストール
 * macOSの設定
 * Git・Vim・VS Code・Zshの設定
 
@@ -27,7 +28,12 @@ thanks https://github.com/zzzmisa/dotfiles-mac/
     sh install.sh
     ```
 
-Gitのユーザー名はハードコーディングされているので、必要に応じて変更してください。
+## 実行後
+* 各アプリケーションにログイン
+* SSH・GPGを使えるようにする
+* Git
+    - **ユーザー名・メールアドレスを変更**
+    - GPGの設定
 
 ## License
 These codes are licensed under CC0.
