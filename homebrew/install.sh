@@ -26,20 +26,23 @@ gpgconf --kill gpg-agent
   echo "export PATH=\"/usr/local/opt/coreutils/libexec/gnubin:$PATH\""
   echo "export MANPATH=\"/usr/local/opt/coreutils/libexec/gnuman:$MANPATH\""
 } >> ~/.zshrc
-source ~/.zshrc
+#shellcheck disable=SC1090
+. ~/.zshrc
 
 # gnu-tar
 {
   echo "export PATH=\"/usr/local/opt/gnu-tar/libexec/gnubin:$PATH\""
   echo "export MANPATH=\"/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH\""
 } >> ~/.zshrc
-source ~/.zshrc
+#shellcheck disable=SC1090
+. ~/.zshrc
 
 # AVR Toolchainへパスを通す
 sudo ln -sfv /Applications/Arduino.app/Contents/Java/hardware/tools/avr /usr/local/avr
 {
   echo "export PATH=\"//usr/local/avr/bin:$PATH\"/"
 } >> ~/.zshrc
-source ~/.zshrc
+#shellcheck disable=SC1090
+. ~/.zshrc
 
 echo "👍 Homebrew setting is done!"
