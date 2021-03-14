@@ -21,27 +21,25 @@ mkdir ~/.gnupg
 echo "pinentry-program /usr/local/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf
 gpgconf --kill gpg-agent
 
+s_path=""
+s_manpath=""
+
 # coreutils
-{
-  echo "export PATH=\"/usr/local/opt/coreutils/libexec/gnubin:$PATH\""
-  echo "export MANPATH=\"/usr/local/opt/coreutils/libexec/gnuman:$MANPATH\""
-} >> ~/.zshrc
-#shellcheck disable=SC1090
-. ~/.zshrc
+s_path="/usr/local/opt/coreutils/libexec/gnubin:${s_path}"
+s_manpath="/usr/local/opt/coreutils/libexec/gnuman:${s_manpath}"
 
 # gnu-tar
-{
-  echo "export PATH=\"/usr/local/opt/gnu-tar/libexec/gnubin:$PATH\""
-  echo "export MANPATH=\"/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH\""
-} >> ~/.zshrc
-#shellcheck disable=SC1090
-. ~/.zshrc
+s_path="/usr/local/opt/gnu-tar/libexec/gnubin:${s_path}"
+s_manpath="/usr/local/opt/gnu-tar/libexec/gnuman:${s_manpath}"
 
-# AVR Toolchainへパスを通す
+# AVR Toolchain
 sudo ln -sfv /Applications/Arduino.app/Contents/Java/hardware/tools/avr /usr/local/avr
-{
-  echo "export PATH=\"//usr/local/avr/bin:$PATH\"/"
-} >> ~/.zshrc
+s_path="/usr/local/avr/bin:${s_path}"
+
+#shellcheck disable=SC2016
+echo "export PATH=\"${s_path}"'$PATH"' >> ~/.zshrc
+#shellcheck disable=SC2016
+echo "export MANPATH=\"${s_manpath}"'$MANPATH"' >> ~/.zshrc
 #shellcheck disable=SC1090
 . ~/.zshrc
 
