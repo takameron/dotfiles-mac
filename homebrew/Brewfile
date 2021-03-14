@@ -16,6 +16,7 @@ brew "imagemagick"
 brew "qpdf"
 brew "docker"
 brew "hugo"
+brew "shellcheck"
 brew "mas"
 brew "asdf"
 
@@ -23,7 +24,6 @@ cask "adguard"
 cask "adobe-acrobat-reader"
 cask "arduino"
 cask "authy"
-cask "bitwarden"
 cask "blackhole-16ch"
 cask "clip-studio-paint"
 cask "coteditor"
@@ -44,15 +44,16 @@ cask "microsoft-powerpoint"
 cask "microsoft-teams"
 cask "notion"
 cask "onedrive"
+cask "openinterminal"
 cask "parallels"
 cask "parallels-toolbox"
 cask "thunderbird"
 cask "visual-studio-code"
 cask "wacom-tablet"
+cask "yubico-yubikey-manager"
 cask "zoom"
 
+mas "Bitwarden", id: 1352778147
 mas "Keepa - Price Tracker", id: 1533805339
-mas "LINE", id: 539883307
-mas "Microsoft To Do", id: 1274495053
 mas "Microsoft OneNote", id: 784801555
 mas "Mia Translate", id: 1500605326
