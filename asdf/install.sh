@@ -2,7 +2,9 @@
 
 # asdfコマンドがなければasdfをインストール
 if ! (type asdf > /dev/null 2>&1); then
-  sh homebrew/install.sh
+  if ! (type brew > /dev/null 2>&1); then
+    sh homebrew/install.sh
+  fi
   brew install coreutils curl git
   brew install asdf
 fi

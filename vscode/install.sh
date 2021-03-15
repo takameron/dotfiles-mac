@@ -2,7 +2,9 @@
 
 # codeコマンドがなければVSCodeをインストール
 if ! (type code > /dev/null 2>&1); then
-  sh homebrew/install.sh
+  if ! (type brew > /dev/null 2>&1); then
+    sh homebrew/install.sh
+  fi
   brew install --cask visual-studio-code
 fi
 
