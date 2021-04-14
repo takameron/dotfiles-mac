@@ -28,6 +28,9 @@ s_manpath=""
 s_path="/usr/local/opt/coreutils/libexec/gnubin:${s_path}"
 s_manpath="/usr/local/opt/coreutils/libexec/gnuman:${s_manpath}"
 
+# curl
+s_path="/usr/local/opt/curl/bin:${s_path}"
+
 # gnu-tar
 s_path="/usr/local/opt/gnu-tar/libexec/gnubin:${s_path}"
 s_manpath="/usr/local/opt/gnu-tar/libexec/gnuman:${s_manpath}"
