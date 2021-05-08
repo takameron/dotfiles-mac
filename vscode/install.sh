@@ -19,6 +19,9 @@ pkglist=(
   gruntfuggly.todo-tree # Todo Tree
   james-yu.latex-workshop # LaTeX Workshop
   wakatime.vscode-wakatime # WakaTime
+  editorconfig.editorconfig # EditorConfig for VS Code
+  ms-azuretools.vscode-docker # Docker
+  ms-vscode.cpptools # C/C++
 )
 
 for i in "${pkglist[@]}"; do
