@@ -6,7 +6,6 @@ brew "curl"
 brew "wget"
 brew "git"
 brew "tree"
-brew "bat"
 brew "gpg"
 brew "pinentry-mac"
 brew "gnu-tar"
@@ -30,8 +29,6 @@ cask "cryptomator"
 cask "cyberduck"
 cask "docker"
 cask "firefox"
-cask "firefox-developer-edition"
-cask "fritzing"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "gpg-suite-no-mail"
@@ -57,7 +54,10 @@ cask "zoom"
 mas "Bitwarden", id: 1352778147
 mas "Keepa - Price Tracker", id: 1533805339
 mas "Microsoft OneNote", id: 784801555
+mas "Microsoft To Do",id: 1274495053
 mas "Mia Translate", id: 1500605326
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Telephone", id: 406825478
+mas "Vectornator: Design Software", id: 1219074514
