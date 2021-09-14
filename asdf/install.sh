@@ -26,13 +26,6 @@ bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-ke
 asdf install nodejs latest
 asdf global nodejs "$(asdf list nodejs | tail -1 | sed -e 's/ //g')"
 
-# === asdf-yarn ===
-# Install plugin
-asdf plugin-add yarn https://github.com/twuni/asdf-yarn.git
-# Install yarn
-asdf install yarn latest
-asdf global yarn "$(asdf list yarn | tail -1 | sed -e 's/ //g')"
-
 # === asdf-python ===
 # Install plugin
 asdf plugin-add python https://github.com/danhper/asdf-python
