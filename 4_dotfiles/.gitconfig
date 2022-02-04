@@ -1,16 +1,16 @@
 [core]
 	# gitignoreの場所
-    excludesfile = ~/.gitignore
-    # 改行コードの自動変換をしない
-    autocrlf = false
+	excludesfile = ~/.gitignore
+	# 改行コードの自動変換をしない
+	autocrlf = false
 	# ファイル名の大文字と小文字を区別する
 	ignorecase = false 
 	# 日本語ファイル名をエンコードしない
 	quotepath = false
 
 [color]
-    # 色付け
-    ui = true
+	# 色付け
+	ui = true
 
 [push]
 	default = current
