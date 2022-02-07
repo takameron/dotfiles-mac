@@ -16,7 +16,6 @@ pkglist=(
   ms-ceintl.vscode-language-pack-ja # Japanese Language Pack for Visual Studio Code
   ms-vscode-remote.remote-ssh-edit # Remote - SSH: Editing Configuration Files
   gruntfuggly.todo-tree # Todo Tree
-  james-yu.latex-workshop # LaTeX Workshop
   wakatime.vscode-wakatime # WakaTime
   editorconfig.editorconfig # EditorConfig for VS Code
   ms-vscode.cpptools # C/C++
