@@ -35,10 +35,6 @@ s_path="/usr/local/opt/curl/bin:${s_path}"
 s_path="/usr/local/opt/gnu-tar/libexec/gnubin:${s_path}"
 s_manpath="/usr/local/opt/gnu-tar/libexec/gnuman:${s_manpath}"
 
-# AVR Toolchain
-sudo ln -sfv /Applications/Arduino.app/Contents/Java/hardware/tools/avr /usr/local/avr
-s_path="/usr/local/avr/bin:${s_path}"
-
 #shellcheck disable=SC2016
 echo "export PATH=\"${s_path}"'$PATH"' >> ~/.zshrc
 #shellcheck disable=SC2016
