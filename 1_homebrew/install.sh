@@ -11,7 +11,7 @@ sudo chown -R "$(whoami)":admin /usr/local/*
 sudo chmod -R g+w /usr/local/*
 
 # Brewfileを実行
-cd "$PWD"/homebrew || exit
+cd "$PWD"/1_homebrew || exit
 brew bundle
 cd - || exit
 

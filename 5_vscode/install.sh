@@ -9,7 +9,7 @@ if ! (type code > /dev/null 2>&1); then
 fi
 
 # settings.jsonの設置
-ln -sfv "$PWD"/vscode/settings.json ~/Library/Application\ Support/Code/User/
+ln -sfv "$PWD"/5_vscode/settings.json ~/Library/Application\ Support/Code/User/
 
 # プラグインのインストール
 pkglist=(
