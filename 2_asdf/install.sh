@@ -13,7 +13,7 @@ fi
 echo ". $(brew --prefix asdf)/libexec/asdf.sh" >> "${ZDOTDIR:-~}"/.zshrc
 
 # Default Packages
-basename -a "$PWD"/asdf/.default-* | xargs -I{} ln -sfv "$PWD"/asdf/{} ~/{}
+basename -a "$PWD"/2_asdf/.default-* | xargs -I{} ln -sfv "$PWD"/2_asdf/{} ~/{}
 
 # === asdf-nodejs ===
 # Requirements

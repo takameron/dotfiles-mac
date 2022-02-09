@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # link
-basename -a "$PWD"/dotfiles/.??* | xargs -I{} ln -sfv "$PWD"/dotfiles/{} ~/{}
+basename -a "$PWD"/4_dotfiles/.??* | xargs -I{} ln -sfv "$PWD"/4_dotfiles/{} ~/{}
 
 # Zinit (Zsh plugin manager)
 sh -c "$(curl -fsSL https://git.io/zinit-install)"
