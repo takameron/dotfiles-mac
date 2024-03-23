@@ -33,14 +33,4 @@ asdf plugin-add python https://github.com/danhper/asdf-python
 asdf install python latest
 asdf global python "$(asdf list python | tail -1 | sed -e 's/ //g')"
 
-# === asdf-ruby ===
-# Requirements(optional, but recommended)
-brew install openssl readline
-echo "export RUBY_CONFIGURE_OPTS=\"--with-openssl-dir=\"$(brew --prefix openssl@1.1)\"\"" >> ~/.zshrc
-# Install plugin
-asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-# Install Ruby
-asdf install ruby latest
-asdf global ruby "$(asdf list ruby | tail -1 | sed -e 's/ //g')"
-
 echo "👍 asdf install is done!"

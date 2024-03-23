@@ -33,26 +33,9 @@ defaults write com.apple.dock show-recents -bool false
 killall Dock
 
 # --- SystemUIServer関係 ---
-# 時計で日付を表示（例：9月20日(木) 23:00）
-defaults write com.apple.menuextra.clock DateFormat -string 'EEE MMM d HH:mm:ss'
-# バッテリーの割合（%）を表示
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # スクリーンショットのドロップシャドウを付けない
 defaults write com.apple.screencapture disable-shadow -bool true
 killall SystemUIServer
-
-# --- Safari ---
-# アドレスバーに完全な URL を表示
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-# ファイルのダウンロード後に自動でファイルを開くのを無効化
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-# メニューバーに「開発」を表示
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-# デバッグメニューをオン
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-# ステータスバーを表示
-defaults write com.apple.Safari ShowStatusBar -bool true
-killall Safari
 
 # ---　TextEdit　---
 # リッチテキストから標準テキストに変更

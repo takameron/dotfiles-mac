@@ -10,7 +10,7 @@ thanks https://github.com/zzzmisa/dotfiles-mac/
 * Git・Vim・VS Code・Zshの設定
 
 ## 動作確認環境
-* macOS Monterey 12.3
+* macOS Sonoma 14.4
 
 ## 事前準備
 1. App Storeにサインイン

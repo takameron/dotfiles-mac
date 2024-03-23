@@ -1,27 +1,13 @@
 tap "homebrew/cask-versions"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 
 brew "coreutils"
-brew "curl"
-brew "wget"
-brew "git"
-brew "tree"
-brew "gpg"
-brew "pinentry-mac"
-brew "imagemagick"
-brew "ffmpeg"
-brew "qpdf"
 brew "hugo"
-brew "golang"
 brew "shellcheck"
 brew "mas"
 brew "asdf"
 
 cask "adguard"
-cask "affinity-designer"
-cask "affinity-photo"
-cask "affinity-publisher"
 cask "authy"
 cask "blackhole-2ch"
 cask "clip-studio-paint"
@@ -29,8 +15,6 @@ cask "discord"
 cask "firefox"
 cask "gnucash"
 cask "google-chrome"
-cask "google-japanese-ime"
-cask "gpg-suite-no-mail"
 cask "microsoft-office"
 cask "notion"
 cask "openinterminal"
@@ -39,11 +23,8 @@ cask "spotify"
 cask "surfshark"
 cask "thunderbird"
 cask "visual-studio-code"
-cask "vmware-fusion"
-cask "zoom"
-# drivers
 cask "wacom-tablet"
-cask "yubico-yubikey-manager"
+cask "zoom"
 # fonts
 cask "font-latin-modern"
 cask "font-latin-modern-math"
@@ -52,6 +33,3 @@ mas "Bitwarden", id: 1352778147
 mas "Keepa - Price Tracker", id: 1533805339
 mas "Microsoft To Do",id: 1274495053
 mas "Mia Translate", id: 1500605326
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
