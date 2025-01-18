@@ -1,6 +1,3 @@
-tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
-
 brew "coreutils"
 brew "hugo"
 brew "shellcheck"
@@ -8,26 +5,21 @@ brew "mas"
 brew "asdf"
 
 cask "adguard"
-cask "authy"
-cask "blackhole-2ch"
-cask "clip-studio-paint"
 cask "discord"
 cask "firefox"
 cask "gnucash"
-cask "google-chrome"
+cask "microsoft-edge"
 cask "microsoft-office"
 cask "notion"
 cask "openinterminal"
+cask "rancher"
 cask "rectangle"
+cask "slack"
 cask "spotify"
 cask "surfshark"
-cask "thunderbird"
+cask "thunderbird@esr"
 cask "visual-studio-code"
-cask "wacom-tablet"
 cask "zoom"
-# fonts
-cask "font-latin-modern"
-cask "font-latin-modern-math"
 
 mas "Bitwarden", id: 1352778147
 mas "Keepa - Price Tracker", id: 1533805339
