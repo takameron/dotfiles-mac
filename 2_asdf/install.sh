@@ -10,7 +10,7 @@ if ! (type asdf > /dev/null 2>&1); then
 fi
 
 # add to shell
-echo ". $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+echo 'export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"' >> ~/.zshrc
 
 # Default Packages
 basename -a "$PWD"/2_asdf/.default-* | xargs -I{} ln -sfv "$PWD"/2_asdf/{} ~/{}
